@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.php">
+        <span class="logo-text"><h2>Healthy Living</h2></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../quemsomos/index.html">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../calculadoraimc/index.html">Cálculo IMC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../listaprof/lista.php">Profissionais</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Nutrição</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../artigos/artigonutri.php">Artigos</a></li>
+              <li><a class="dropdown-item" href="../artigos/sobrenutri.html">Sobre a área</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Psicologia</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../artigos/artigopsico.php">Artigos</a></li>
+              <li><a class="dropdown-item" href="../artigos/sobrepsico.html">Sobre a área</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../editor/index.php">Escrever artigo</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="../formulario/formulario.php" class="btn btn-success me-3 ">Formulário</a>
+          <a href="../sair.php" class="btn btn-danger me-3">Sair</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <br>
+    <br>
+    <main id="container">
+        <section id="img">
+            <img src="assets/images/doctor.svg">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Informe seu peso em Kg
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" name="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                       Informe sua altura em metros
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="0.01" id="height" name="height" required>
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div>
+
+                <input type="button" id="calculate" value="Calcular" />
+
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more_info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                        Mais informações sobre o IMC
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

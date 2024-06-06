@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18181b;
+  }
+
+  .container {
+    background-color: #262626;
+    padding: 6px;
+    width: 450px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #16a34a;
+  }
+
+  #img img {
+    width: 100%;
+    align-items: flex-start;
+}
+
+  form {
+    position: absolute;
+    margin-top: 80px;
+    transition: 0.5s;
+    width: 400px;
+    height: 600px;
+  }
+
+  .buttonsForm {
+    margin-top: 50px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 green;
+  }
+
+  .buttonsForm button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 28px;
+    color: #f8fafc;
+  }
+
+  .btnColor {
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    background: #16a34a;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    background: #16a34a;
+    color: #f8fafc;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+
+  button[type="submit"],
+  button[type="button"] {
+    background: #16a34a;
+    color: #f8fafc;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+
+  .divCheck {
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+    color: #f8fafc;
+  }
+
+  #signin {
+    left: 25px;
+  }
+
+  #signup {
+    left: 450px;
+  }
+
+  i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+  }
+
+  .iName {
+    top: 45px;
+  }
+
+  .iEmail {
+    top: 125px;
+  }
+
+  .iEmail2 {
+    top: 45px;
+  }
+
+  .iPassword {
+    top: 205px;
+  }
+
+  .iPassword2 {
+    top: 285px;
+  }
+
+  .iPassword3 {
+    top: 125px;
+  }
+
+  .navbar {
+    z-index: 1000;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .dropdown-menu {
+    background-color: #f8fafc;
+  }
+
+  .dropdown-item {
+    color: #000000; /* Alterado para preto */
+  }
