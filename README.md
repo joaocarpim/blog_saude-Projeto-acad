@@ -2,6 +2,8 @@
 ## Descrição do Projeto
 
 O projeto "Healthy Living" visa fornecer informações e recursos sobre saúde, nutrição e psicologia, bem como oferecer uma plataforma para profissionais publicarem artigos relevantes.
+
+
 **Fui convidado a implementar melhorias no projeto, aprimorando tanto a estética quanto a funcionalidade e acessibilidade.**
 
 ## Acessibilidade
